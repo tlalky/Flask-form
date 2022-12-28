@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <ul>
+        {% for ppl in people %}
+            <li>{{ppl}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

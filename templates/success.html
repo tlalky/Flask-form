@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1 style="text-align: center">
+        You are registered successfully!
+    </h1>
+    <!-- <a href="http://127.0.0.1:5000/registered">See who also is registered</a> -->
+    <div style="text-align: center">
+        <img src="https://i.redd.it/pwg81pxeeog81.jpg" alt="Image" width="200" height="200">
+    </div >
+        <form action="/registered" method="get" style="text-align: center">
+            <button type="submit">See who registered already</button>
+        </form>
+{% endblock %}
+

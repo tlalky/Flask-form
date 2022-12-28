@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>
+        Let us collect your data so we can provide better ADS for you!
+    </h1>
+        <form action="/register" method="post">
+            <input name="name" placeholder="Full name" type="text">
+            <select name="sex">
+                <option disabled selected value="sex">Sex</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Other">Other</option>
+            </select>
+            <input name="phone_number" type="tel" placeholder="Phone 123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+            <input type="month" id="bdaymonth" name="bdaymonth">
+
+
+            <input type="submit" value="Register">
+        </form>
+        <form action="/registered" method="get">
+            <button type="submit">see who registered already</button>
+        </form>
+{% endblock %}
